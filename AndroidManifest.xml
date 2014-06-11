@@ -10,6 +10,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".chapter1.InstanceofTest"/>
+        <activity android:name=".chapter1.ArrayTest"/>
 
     </application>
 </manifest>
