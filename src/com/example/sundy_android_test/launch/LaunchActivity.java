@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import com.example.sundy_android_test.chapter1.ArrayTest;
 import com.example.sundy_android_test.chapter1.InstanceofTest;
 
 /**
@@ -30,9 +31,11 @@ public class LaunchActivity extends ListActivity implements AdapterView.OnItemCl
     }
 
     String[] activityNames = {
+            "ArrayTest",
             "InstanceofTest"
     };
     Class[] activityClasses = new Class[]{
+            ArrayTest.class,
             InstanceofTest.class
     };
 }
