@@ -11,6 +11,8 @@
         </activity>
         <activity android:name=".chapter1.InstanceofTest"/>
         <activity android:name=".chapter1.ArrayTest"/>
+        <activity android:name=".chapter1.AnonymousInnerClassTest"/>
+        <activity android:name=".chapter1.GenericTest"/>
 
     </application>
 </manifest>

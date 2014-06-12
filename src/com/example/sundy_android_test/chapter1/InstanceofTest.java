@@ -11,8 +11,9 @@ import com.example.sundy_android_test.util.Constant;
 
 /**
  * @author Sam
- * @since 14-6-11
- * 点击任一个界面元素，自动判断用户点击的是什么控件
+ * @since v1.0
+ * @date 2014-6-11
+ * 閬嶅巻View鏃讹紝鏍规嵁View鐨勭被鍨嬬粦瀹氱浉搴旂殑浜嬩欢
  */
 public class InstanceofTest extends Activity implements View.OnClickListener, Constant {
 
@@ -32,18 +33,16 @@ public class InstanceofTest extends Activity implements View.OnClickListener, Co
     }
 
     /**
-     * 这里注意：一定要将CheckBox的判断放在前面，因为CheckBox是Button和TextView的子类
-     * 同理，Button是TextView的子类，所以应该放在TextView前面判断
      * @param v
      */
     @Override
     public void onClick(View v) {
         if(v instanceof CheckBox) {
-            CommonUtil.ShowToastMessage(this, "您点击了checkbox");
+            CommonUtil.ShowToastMessage(this, "this is checkbox");
         }else if(v instanceof Button) {
-            CommonUtil.ShowToastMessage(this, "您点击了button");
+            CommonUtil.ShowToastMessage(this, "this is button");
         }else if(v instanceof TextView) {
-            CommonUtil.ShowToastMessage(this, "您点击了textview");
+            CommonUtil.ShowToastMessage(this, "this is textview");
         }
     }
 

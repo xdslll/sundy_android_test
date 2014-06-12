@@ -11,7 +11,7 @@ import com.example.sundy_android_test.R;
 /**
  * @author Sam
  * @since 14-6-111
- * ¶ÁÈ¡array.xmlÖĞµÄÑÕÉ«²ÎÊı£¬¶¯Ì¬¼ÓÔØ²¢ÏÔÊ¾µ½½çÃæÉÏ
+ * array.xmlæ–‡ä»¶çš„åŠ¨æ€åŠ è½½
  */
 public class ArrayTest extends Activity {
 
@@ -32,7 +32,7 @@ public class ArrayTest extends Activity {
                     ViewGroup.LayoutParams.MATCH_PARENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT
             ));
-            textView.setText("²âÊÔÎÄ±¾");
+            textView.setText("Test Color");
             textView.setBackgroundColor(Color.parseColor(aColors[i]));
             layoutRoot.addView(textView);
         }

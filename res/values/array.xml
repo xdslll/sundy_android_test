@@ -13,4 +13,11 @@
         <item>#111111</item>
         <item>#666666</item>
     </string-array>
+    <string name="launchPackage">com.example.sundy_android_test</string>
+    <string-array name="launchActivities">
+        <item>chapter1.GenericTest</item>
+        <item>chapter1.AnonymousInnerClassTest</item>
+        <item>chapter1.ArrayTest</item>
+        <item>chapter1.InstanceofTest</item>
+    </string-array>
 </resources>
