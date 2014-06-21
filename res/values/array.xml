@@ -15,6 +15,10 @@
     </string-array>
     <string name="launchPackage">com.example.sundy_android_test</string>
     <string-array name="launchActivities">
+        <item>chapter3.ActivityTaskA</item>
+        <item>chapter3.ActivityLifeCycle</item>
+        <item>chapter3.LoadView</item>
+        <item>chapter3.IntentTest</item>
         <item>chapter1.GenericTest</item>
         <item>chapter1.AnonymousInnerClassTest</item>
         <item>chapter1.ArrayTest</item>

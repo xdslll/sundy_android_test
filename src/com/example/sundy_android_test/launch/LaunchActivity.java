@@ -2,7 +2,8 @@ package com.example.sundy_android_test.launch;
 
 import android.app.ListActivity;
 import android.content.Intent;
-import android.os.Bundle;
+import android.os.*;
+import android.os.Process;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -48,5 +49,13 @@ public class LaunchActivity extends ListActivity
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i(DEBUG_TAG, "Launch Activity destroyed.");
+        //System.exit(0);
+        //Process.killProcess(Process.myPid());
     }
 }

@@ -6,4 +6,6 @@ package com.example.sundy_android_test.util;
 public interface Constant {
 
     public static final String DEBUG_TAG = "TAG";
+    public static final int RESULT_CODE = 0x124;
+    public final static int REQUEST_CODE = 0x123;
 }
