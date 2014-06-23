@@ -38,5 +38,13 @@
                 />
         <activity android:name=".chapter3.ActivityTaskA"/>
         <activity android:name=".chapter3.ActivityTaskB"/>
+        <activity android:name=".chapter3.ServiceTest"/>
+        <activity android:name=".chapter3.ServiceTest2"/>
+        <activity android:name=".chapter3.StartedServiceTest"/>
+
+        <service android:name=".chapter3.SamService"/>
+        <service android:name=".chapter3.SamIntentService"/>
+        <service android:name=".chapter3.StartedService"/>
+
     </application>
 </manifest>
