@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:key="settings"
+            android:title="Basic Settings"
+            android:summary="Basic settings for users.">
+        <CheckBoxPreference
+                android:key="pre_wifi"
+                android:checked="true"
+                android:title="Use Wifi"
+                android:summary="If checked, you can use wifi."
+                />
+        <EditTextPreference
+                android:key="pre_name"
+                android:hint="Input your name"
+                android:title="Set your name"
+                android:summary="Set your name, if you need."
+                />
+        <PreferenceScreen android:title="Set Wifi">
+            <intent android:action="android.settings.WIFI_SETTINGS"/>
+            <EditTextPreference
+                android:key="pre_wifi_setting"
+                android:title="Wifi SSID"
+                android:summary="Input Your Wifi SSID"
+                android:hint="Input SSID"
+                />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

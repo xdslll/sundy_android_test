@@ -41,6 +41,26 @@
         <activity android:name=".chapter3.ServiceTest"/>
         <activity android:name=".chapter3.ServiceTest2"/>
         <activity android:name=".chapter3.StartedServiceTest"/>
+        <activity android:name=".chapter4.SimpleCustomViewActivity"/>
+        <activity android:name=".chapter4.NinePatchTest"/>
+        <activity android:name=".chapter4.TextViewActivity"/>
+        <activity android:name=".chapter4.BusinessTextView"/>
+        <activity android:name=".chapter4.ButtonTest"/>
+        <activity android:name=".chapter4.ListViewTest"
+                android:windowSoftInputMode="stateVisible"
+                android:configChanges="keyboard|keyboardHidden"
+                />
+        <activity android:name=".chapter4.SimpleMenuTest"
+                android:icon="@drawable/add"
+                android:parentActivityName=".launch.LaunchActivity"
+                />
+        <activity android:name=".chapter4.ContextMenuTest"
+                  android:theme="@android:style/Theme.Holo.NoActionBar"
+                />
+        <activity android:name=".chapter4.StyleTest"/>
+        <activity android:name=".chapter4.SharedPreferenceTest"/>
+        <activity android:name=".chapter4.PreActivityTest"/>
+        <activity android:name=".chapter4.sqlite_test.UserActivity"/>
 
         <service android:name=".chapter3.SamService"/>
         <service android:name=".chapter3.SamIntentService"/>

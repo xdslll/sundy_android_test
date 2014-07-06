@@ -4,7 +4,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 /**
- * Created by xiads on 14-6-11.
+ * Created by xiads btn_on 14-6-11.
  */
 public class CommonUtil {
 

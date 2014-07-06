@@ -40,7 +40,7 @@ public class InstanceofTest extends Activity implements View.OnClickListener, Co
         if(v instanceof CheckBox) {
             CommonUtil.ShowToastMessage(this, "this is checkbox");
         }else if(v instanceof Button) {
-            CommonUtil.ShowToastMessage(this, "this is button");
+            CommonUtil.ShowToastMessage(this, "this is button_9");
         }else if(v instanceof TextView) {
             CommonUtil.ShowToastMessage(this, "this is textview");
         }

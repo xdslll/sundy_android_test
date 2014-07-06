@@ -1,7 +1,7 @@
 package com.example.sundy_android_test.util;
 
 /**
- * Created by xiads on 14-6-11.
+ * Created by xiads btn_on 14-6-11.
  */
 public interface Constant {
 

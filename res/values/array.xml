@@ -15,6 +15,18 @@
     </string-array>
     <string name="launchPackage">com.example.sundy_android_test</string>
     <string-array name="launchActivities">
+        <item>chapter4.sqlite_test.UserActivity</item>
+        <item>chapter4.PreActivityTest</item>
+        <item>chapter4.SharedPreferenceTest</item>
+        <item>chapter4.StyleTest</item>
+        <item>chapter4.ContextMenuTest</item>
+        <item>chapter4.SimpleMenuTest</item>
+        <item>chapter4.ListViewTest</item>
+        <item>chapter4.ButtonTest</item>
+        <item>chapter4.BusinessTextView</item>
+        <item>chapter4.TextViewActivity</item>
+        <item>chapter4.NinePatchTest</item>
+        <item>chapter4.SimpleCustomViewActivity</item>
         <item>chapter3.StartedServiceTest</item>
         <item>chapter3.ServiceTest</item>
         <item>chapter3.ActivityTaskA</item>
@@ -25,5 +37,13 @@
         <item>chapter1.AnonymousInnerClassTest</item>
         <item>chapter1.ArrayTest</item>
         <item>chapter1.InstanceofTest</item>
+    </string-array>
+    <string-array name="actionBarData">
+        <item>Home Page</item>
+        <item>News</item>
+        <item>More Information</item>
+        <item>Email To Us</item>
+        <item>About</item>
+        <item>Update</item>
     </string-array>
 </resources>

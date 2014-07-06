@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/menu_1_1"
+    android:title="item1_1"
+    android:icon="@drawable/menu01"
+    android:showAsAction="ifRoom|collapseActionView"
+    android:actionViewClass="android.widget.SearchView"
+    />
+<item
+    android:id="@+id/menu_1_2"
+    android:title="item1_2"
+    android:icon="@drawable/menu02"
+    android:showAsAction="ifRoom"
+    />
+<item
+    android:id="@+id/menu_1_3"
+    android:title="item1_3"
+    android:icon="@drawable/menu03"
+    android:showAsAction="ifRoom"
+    />
+<item
+    android:id="@+id/menu_2"
+    android:title="item2"
+    android:icon="@drawable/up"
+    >
+    <menu>
+        <item
+            android:id="@+id/menu_2_1"
+            android:title="item2-1"
+            />
+        <item
+            android:id="@+id/menu_2_2"
+            android:title="item2-2"
+            />
+    </menu>
+</item>
+</menu>

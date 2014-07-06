@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">sundy_android_test</string>
+    <string name="simple_text">Hello World.</string>
 </resources>
