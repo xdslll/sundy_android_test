@@ -15,6 +15,15 @@
     </string-array>
     <string name="launchPackage">com.example.sundy_android_test</string>
     <string-array name="launchActivities">
+        <item>chapter5.DetectSlowActivity</item>
+        <item>chapter5.TestHandlerAndAsyncTask</item>
+        <item>chapter5.AsyncTaskTest</item>
+        <item>chapter5.VariousHandlerTest</item>
+        <item>chapter5.SimpleHandlerTest</item>
+        <item>chapter5.SimpleThreadTest</item>
+        <item>chapter5.AppWidgetConfigure</item>
+        <item>chapter5.MetaDataActivity</item>
+        <item>chapter5.PickActivityTest</item>
         <item>chapter4.sqlite_test.UserActivity</item>
         <item>chapter4.PreActivityTest</item>
         <item>chapter4.SharedPreferenceTest</item>

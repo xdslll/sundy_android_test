@@ -4,6 +4,11 @@
     <uses-sdk android:minSdkVersion="11"
               android:targetSdkVersion="19"
               />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+
     <application
             android:name=".chapter3.ApplicationTest"
             android:icon="@drawable/icon"
@@ -61,10 +66,87 @@
         <activity android:name=".chapter4.SharedPreferenceTest"/>
         <activity android:name=".chapter4.PreActivityTest"/>
         <activity android:name=".chapter4.sqlite_test.UserActivity"/>
+        <activity android:name=".chapter5.PickActivityTest"/>
+        <activity android:name=".chapter5.ShortcutTest"
+                android:icon="@drawable/menu01"
+                android:label="Short Cut Test">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter5.MetaDataActivity">
+            <meta-data
+                    android:name="sam.meta.data"
+                    android:value="Oh my god!"/>
+        </activity>
+        <activity android:name=".chapter5.AppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter5.AppWidgetCommitActivity">
+            <intent-filter>
+                <action android:name="sam.appwidget.commit"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter5.SimpleThreadTest"/>
+        <activity android:name=".chapter5.SimpleHandlerTest"/>
+        <activity android:name=".chapter5.VariousHandlerTest"/>
+        <activity android:name=".chapter5.AsyncTaskTest"/>
+        <activity android:name=".chapter5.TestHandlerAndAsyncTask"/>
+        <activity android:name=".chapter5.DetectSlowActivity"/>
+
+        <provider android:authorities="sam.app.widget.provider"
+                  android:name=".chapter5.appwidget_list.AppWidgetListDataProvider"
+                />
 
         <service android:name=".chapter3.SamService"/>
         <service android:name=".chapter3.SamIntentService"/>
         <service android:name=".chapter3.StartedService"/>
+        <service android:name=".chapter5.appwidget_list.AppWidgetListService"
+                android:exported="false"
+                android:permission="android.permission.BIND_REMOTEVIEWS"
+                />
 
+        <receiver android:name=".chapter5.AppWidgetTest">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/app_widget_provider_test"/>
+        </receiver>
+        <receiver android:name=".chapter5.AppWidgetBroadcast">
+            <intent-filter>
+                <action android:name="sam.appwidget.receiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".chapter5.appwidget_list.AppWidgetListProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/app_widget_list_info"/>
+        </receiver>
+
+        <!-- The widget provider -->
+        <receiver android:name=".chapter5.appwidget_list_demo.WeatherWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <!-- This specifies the widget provider info -->
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/widgetinfo" />
+        </receiver>
+
+        <!-- The service serving the RemoteViews to the collection widget -->
+        <service android:name=".chapter5.appwidget_list_demo.WeatherWidgetService"
+                 android:permission="android.permission.BIND_REMOTEVIEWS"
+                 android:exported="false" />
+
+        <!-- The content provider serving the (fake) weather data -->
+        <provider android:name=".chapter5.appwidget_list_demo.WeatherDataProvider"
+                  android:authorities="com.example.android.weatherlistwidget.provider"
+                  android:exported="true" />
     </application>
 </manifest>

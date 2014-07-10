@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="280dp"
+        android:minHeight="120dp"
+        android:initialLayout="@layout/app_widget_list"
+        android:previewImage="@drawable/menu04"
+        android:resizeMode="vertical"
+        android:updatePeriodMillis="5000"
+        android:minResizeWidth="280dp"
+        android:minResizeHeight="80dp"
+        >
+
+</appwidget-provider>

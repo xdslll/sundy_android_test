@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+        android:minWidth="80dp"
+        android:minHeight="40dp"
+        android:initialLayout="@layout/app_widget_layout"
+        android:configure="com.example.sundy_android_test.chapter5.AppWidgetConfigure"
+        android:updatePeriodMillis="5000"
+        android:resizeMode="horizontal|vertical"
+        android:previewImage="@drawable/menu07"
+        >
+</appwidget-provider>
