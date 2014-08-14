@@ -10,4 +10,7 @@
 
     <string name="refresh">Refresh</string>
     <string name="city_name">San Francisco</string>
+    <string name="custom_dialog_activity_text">Example of how you can use a
+        custom Theme.Dialog theme to make an activity that looks like a
+        customized dialog, here with an ugly frame.</string>
 </resources>

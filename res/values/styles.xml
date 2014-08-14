@@ -37,6 +37,14 @@
 
     <style name="system_style" parent="android:ButtonBar"></style>
 
+    <style name="Theme.CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/filled_box</item>
+    </style>
+
+    <style name="Theme.BlankDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/blank_box</item>
+    </style>
+
     <color name="red">#ff0000</color>
     <color name="green">#00ff00</color>
     <color name="white">#ffffff</color>

@@ -15,6 +15,17 @@
     </string-array>
     <string name="launchPackage">com.example.sundy_android_test</string>
     <string-array name="launchActivities">
+        <item>chapter_my.MyLinearLayoutTest</item>
+        <item>chapter_my.GestureZoom</item>
+        <item>chapter_my.GestureTest</item>
+        <item>chapter_my.GestureDetectorTest</item>
+        <item>chapter_my.TitleProgress</item>
+        <item>chapter5.anim.TweenAnimationTest</item>
+        <item>chapter5.ViewStubTest</item>
+        <item>chapter5.LargeListView</item>
+        <item>chapter5.OrientationTest</item>
+        <item>chapter5.DialogActivity</item>
+        <item>chapter5.ThemeTest</item>
         <item>chapter5.DetectSlowActivity</item>
         <item>chapter5.TestHandlerAndAsyncTask</item>
         <item>chapter5.AsyncTaskTest</item>

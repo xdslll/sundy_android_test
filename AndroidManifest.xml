@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.sundy_android_test">
+          package="com.example.sundy_android_test"
+          android:versionCode="1"
+          android:versionName="0.1"
+        >
     <uses-sdk android:minSdkVersion="11"
               android:targetSdkVersion="19"
               />
@@ -96,6 +99,26 @@
         <activity android:name=".chapter5.AsyncTaskTest"/>
         <activity android:name=".chapter5.TestHandlerAndAsyncTask"/>
         <activity android:name=".chapter5.DetectSlowActivity"/>
+        <activity android:name=".chapter5.ThemeTest"
+                  android:theme="@style/Theme.CustomDialog"
+                />
+        <activity android:name=".chapter5.DialogActivity"
+                  android:theme="@style/Theme.BlankDialog"
+                />
+        <activity android:name=".chapter5.OrientationTest"
+                  android:configChanges="orientation|screenSize"
+                />
+        <activity android:name=".chapter5.LargeListView"/>
+        <activity android:name=".chapter5.ViewStubTest"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                />
+        <activity android:name=".chapter5.anim.TweenAnimationTest"/>
+
+        <activity android:name=".chapter_my.TitleProgress"/>
+        <activity android:name=".chapter_my.GestureDetectorTest"/>
+        <activity android:name=".chapter_my.GestureTest"/>
+        <activity android:name=".chapter_my.GestureZoom"/>
+        <activity android:name=".chapter_my.MyLinearLayoutTest"/>
 
         <provider android:authorities="sam.app.widget.provider"
                   android:name=".chapter5.appwidget_list.AppWidgetListDataProvider"
